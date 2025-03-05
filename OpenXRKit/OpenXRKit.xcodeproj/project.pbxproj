@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		830AD83E2BC45B34003F51D3 /* compositor.metal in Sources */ = {isa = PBXBuildFile; fileRef = 830AD83D2BC45B34003F51D3 /* compositor.metal */; };
+		832F7AAB2BB77AB800ACE6EE /* openxr_api.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 838A490B2BB1FAC700CEA1A8 /* openxr_api.cpp */; };
+		832F7AAC2BB77ABA00ACE6EE /* instance_apple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 838A490C2BB1FAC700CEA1A8 /* instance_apple.cpp */; };
+		832F7AAD2BB77ABB00ACE6EE /* system_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 837B1D2B2BB6293B003D65EC /* system_ios.mm */; };
+		832F7B162BBA4EAA00ACE6EE /* session_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 832F7B132BBA4EAA00ACE6EE /* session_ios.mm */; };
+		832F7B172BBA4EB800ACE6EE /* session_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 832F7B132BBA4EAA00ACE6EE /* session_ios.mm */; };
+		832F7B192BBBCAFC00ACE6EE /* runtime_api.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 832F7B182BBBCAFC00ACE6EE /* runtime_api.cpp */; };
+		8363D4F32C41EE8B00948FEC /* session_visionos.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8363D4F22C41EE8B00948FEC /* session_visionos.mm */; };
+		8363D4FD2C446ADE00948FEC /* frame_queue.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8363D4FB2C446ADE00948FEC /* frame_queue.hpp */; };
+		837B1D2C2BB6293B003D65EC /* system_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 837B1D2B2BB6293B003D65EC /* system_ios.mm */; };
+		838A49052BB1FA0400CEA1A8 /* OpenXRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 838A49042BB1FA0400CEA1A8 /* OpenXRKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		838A49142BB1FAC700CEA1A8 /* openxr_api.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 838A490B2BB1FAC700CEA1A8 /* openxr_api.cpp */; };
+		838A49152BB1FAC700CEA1A8 /* instance_apple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 838A490C2BB1FAC700CEA1A8 /* instance_apple.cpp */; };
+		838A49172BB1FAC700CEA1A8 /* openxr_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 838A490F2BB1FAC700CEA1A8 /* openxr_api.h */; };
+		838A49192BB1FAC700CEA1A8 /* runtime_apple.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 838A49112BB1FAC700CEA1A8 /* runtime_apple.hpp */; };
+		838A491A2BB1FAC700CEA1A8 /* runtime_api.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 838A49122BB1FAC700CEA1A8 /* runtime_api.hpp */; };
+		83906E6D2BB5D708009FA03D /* openxr_loader_negotiation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83906E652BB5D708009FA03D /* openxr_loader_negotiation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83906E6E2BB5D708009FA03D /* openxr_platform_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 83906E662BB5D708009FA03D /* openxr_platform_defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83906E6F2BB5D708009FA03D /* openxr_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 83906E672BB5D708009FA03D /* openxr_platform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83906E702BB5D708009FA03D /* openxr_reflection_parent_structs.h in Headers */ = {isa = PBXBuildFile; fileRef = 83906E682BB5D708009FA03D /* openxr_reflection_parent_structs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83906E712BB5D708009FA03D /* openxr_reflection_structs.h in Headers */ = {isa = PBXBuildFile; fileRef = 83906E692BB5D708009FA03D /* openxr_reflection_structs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83906E722BB5D708009FA03D /* openxr_reflection.h in Headers */ = {isa = PBXBuildFile; fileRef = 83906E6A2BB5D708009FA03D /* openxr_reflection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83906E732BB5D708009FA03D /* openxr.h in Headers */ = {isa = PBXBuildFile; fileRef = 83906E6B2BB5D708009FA03D /* openxr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83906E802BB5D72D009FA03D /* filesystem_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83906E742BB5D72D009FA03D /* filesystem_utils.cpp */; };
+		83906E822BB5D72D009FA03D /* object_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83906E762BB5D72D009FA03D /* object_info.cpp */; };
+		83906E9F2BB5D75E009FA03D /* api_layer_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83906E8C2BB5D75E009FA03D /* api_layer_interface.cpp */; };
+		83906EA22BB5D75E009FA03D /* loader_logger_recorders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83906E8F2BB5D75E009FA03D /* loader_logger_recorders.cpp */; };
+		83906EA42BB5D75E009FA03D /* manifest_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83906E912BB5D75E009FA03D /* manifest_file.cpp */; };
+		83906EA72BB5D75E009FA03D /* loader_init_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83906E942BB5D75E009FA03D /* loader_init_data.cpp */; };
+		83906EA82BB5D75E009FA03D /* loader_logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83906E952BB5D75E009FA03D /* loader_logger.cpp */; };
+		83906EA92BB5D75E009FA03D /* loader_core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83906E962BB5D75E009FA03D /* loader_core.cpp */; };
+		83906EAB2BB5D75E009FA03D /* loader_instance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83906E982BB5D75E009FA03D /* loader_instance.cpp */; };
+		83906EAE2BB5D75E009FA03D /* xr_generated_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83906E9B2BB5D75E009FA03D /* xr_generated_loader.cpp */; };
+		83906EB12BB5D75E009FA03D /* runtime_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83906E9E2BB5D75E009FA03D /* runtime_interface.cpp */; };
+		83906EB72BB5D840009FA03D /* xr_generated_dispatch_table_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 83906EB52BB5D840009FA03D /* xr_generated_dispatch_table_core.c */; };
+		83906EC02BB5D873009FA03D /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83906EBA2BB5D873009FA03D /* json_reader.cpp */; };
+		83906EC22BB5D873009FA03D /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83906EBC2BB5D873009FA03D /* json_value.cpp */; };
+		83906EC32BB5D873009FA03D /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83906EBE2BB5D873009FA03D /* json_writer.cpp */; };
+		8392FAA12BBE418400FDEAFF /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392FAA02BBE418400FDEAFF /* Metal.framework */; };
+		8392FAA32BBE418C00FDEAFF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392FAA22BBE418C00FDEAFF /* Cocoa.framework */; platformFilters = (macos, ); };
+		8392FAA52BBE419600FDEAFF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392FAA42BBE419600FDEAFF /* QuartzCore.framework */; };
+		83AEFD472C4DD90000844A25 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 83AEFD462C4DD90000844A25 /* PrivacyInfo.xcprivacy */; };
+		83EC63802BC9C4BD00A6187E /* interaction_manager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83EC637D2BC9C4BD00A6187E /* interaction_manager.mm */; };
+		83EC639D2BCA58E700A6187E /* system_visionos.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83EC639C2BCA58E700A6187E /* system_visionos.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		830AD83D2BC45B34003F51D3 /* compositor.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = compositor.metal; sourceTree = "<group>"; };
+		832F7AA72BB77AA500ACE6EE /* libopenxr_runtime.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libopenxr_runtime.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		832F7B132BBA4EAA00ACE6EE /* session_ios.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = session_ios.mm; sourceTree = "<group>"; };
+		832F7B182BBBCAFC00ACE6EE /* runtime_api.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = runtime_api.cpp; sourceTree = "<group>"; };
+		8363D4F22C41EE8B00948FEC /* session_visionos.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = session_visionos.mm; sourceTree = "<group>"; };
+		8363D4FB2C446ADE00948FEC /* frame_queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = frame_queue.hpp; sourceTree = "<group>"; };
+		837B1D2B2BB6293B003D65EC /* system_ios.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = system_ios.mm; sourceTree = "<group>"; };
+		838A49012BB1FA0400CEA1A8 /* OpenXRKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenXRKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		838A49042BB1FA0400CEA1A8 /* OpenXRKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenXRKit.h; sourceTree = "<group>"; };
+		838A490B2BB1FAC700CEA1A8 /* openxr_api.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = openxr_api.cpp; sourceTree = "<group>"; };
+		838A490C2BB1FAC700CEA1A8 /* instance_apple.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = instance_apple.cpp; sourceTree = "<group>"; };
+		838A490F2BB1FAC700CEA1A8 /* openxr_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openxr_api.h; sourceTree = "<group>"; };
+		838A49112BB1FAC700CEA1A8 /* runtime_apple.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = runtime_apple.hpp; sourceTree = "<group>"; };
+		838A49122BB1FAC700CEA1A8 /* runtime_api.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = runtime_api.hpp; sourceTree = "<group>"; };
+		83906E652BB5D708009FA03D /* openxr_loader_negotiation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openxr_loader_negotiation.h; sourceTree = "<group>"; };
+		83906E662BB5D708009FA03D /* openxr_platform_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openxr_platform_defines.h; sourceTree = "<group>"; };
+		83906E672BB5D708009FA03D /* openxr_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openxr_platform.h; sourceTree = "<group>"; };
+		83906E682BB5D708009FA03D /* openxr_reflection_parent_structs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openxr_reflection_parent_structs.h; sourceTree = "<group>"; };
+		83906E692BB5D708009FA03D /* openxr_reflection_structs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openxr_reflection_structs.h; sourceTree = "<group>"; };
+		83906E6A2BB5D708009FA03D /* openxr_reflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openxr_reflection.h; sourceTree = "<group>"; };
+		83906E6B2BB5D708009FA03D /* openxr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openxr.h; sourceTree = "<group>"; };
+		83906E742BB5D72D009FA03D /* filesystem_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = filesystem_utils.cpp; path = "../OpenXR-SDK/src/common/filesystem_utils.cpp"; sourceTree = "<group>"; };
+		83906E752BB5D72D009FA03D /* vulkan_debug_object_namer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vulkan_debug_object_namer.hpp; path = "../OpenXR-SDK/src/common/vulkan_debug_object_namer.hpp"; sourceTree = "<group>"; };
+		83906E762BB5D72D009FA03D /* object_info.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = object_info.cpp; path = "../OpenXR-SDK/src/common/object_info.cpp"; sourceTree = "<group>"; };
+		83906E772BB5D72D009FA03D /* hex_and_handles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hex_and_handles.h; path = "../OpenXR-SDK/src/common/hex_and_handles.h"; sourceTree = "<group>"; };
+		83906E782BB5D72D009FA03D /* object_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = object_info.h; path = "../OpenXR-SDK/src/common/object_info.h"; sourceTree = "<group>"; };
+		83906E792BB5D72D009FA03D /* xr_dependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xr_dependencies.h; path = "../OpenXR-SDK/src/common/xr_dependencies.h"; sourceTree = "<group>"; };
+		83906E7A2BB5D72D009FA03D /* platform_utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = platform_utils.hpp; path = "../OpenXR-SDK/src/common/platform_utils.hpp"; sourceTree = "<group>"; };
+		83906E7B2BB5D72D009FA03D /* extra_algorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = extra_algorithms.h; path = "../OpenXR-SDK/src/common/extra_algorithms.h"; sourceTree = "<group>"; };
+		83906E7C2BB5D72D009FA03D /* stdfs_conditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stdfs_conditions.h; path = "../OpenXR-SDK/src/common/stdfs_conditions.h"; sourceTree = "<group>"; };
+		83906E7D2BB5D72D009FA03D /* unique_asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unique_asset.h; path = "../OpenXR-SDK/src/common/unique_asset.h"; sourceTree = "<group>"; };
+		83906E7E2BB5D72D009FA03D /* xr_linear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xr_linear.h; path = "../OpenXR-SDK/src/common/xr_linear.h"; sourceTree = "<group>"; };
+		83906E7F2BB5D72D009FA03D /* filesystem_utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = filesystem_utils.hpp; path = "../OpenXR-SDK/src/common/filesystem_utils.hpp"; sourceTree = "<group>"; };
+		83906E8C2BB5D75E009FA03D /* api_layer_interface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = api_layer_interface.cpp; path = "../OpenXR-SDK/src/loader/api_layer_interface.cpp"; sourceTree = "<group>"; };
+		83906E8D2BB5D75E009FA03D /* exception_handling.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = exception_handling.hpp; path = "../OpenXR-SDK/src/loader/exception_handling.hpp"; sourceTree = "<group>"; };
+		83906E8E2BB5D75E009FA03D /* api_layer_interface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = api_layer_interface.hpp; path = "../OpenXR-SDK/src/loader/api_layer_interface.hpp"; sourceTree = "<group>"; };
+		83906E8F2BB5D75E009FA03D /* loader_logger_recorders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = loader_logger_recorders.cpp; path = "../OpenXR-SDK/src/loader/loader_logger_recorders.cpp"; sourceTree = "<group>"; };
+		83906E902BB5D75E009FA03D /* manifest_file.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = manifest_file.hpp; path = "../OpenXR-SDK/src/loader/manifest_file.hpp"; sourceTree = "<group>"; };
+		83906E912BB5D75E009FA03D /* manifest_file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = manifest_file.cpp; path = "../OpenXR-SDK/src/loader/manifest_file.cpp"; sourceTree = "<group>"; };
+		83906E922BB5D75E009FA03D /* loader_init_data.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = loader_init_data.hpp; path = "../OpenXR-SDK/src/loader/loader_init_data.hpp"; sourceTree = "<group>"; };
+		83906E932BB5D75E009FA03D /* loader_logger_recorders.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = loader_logger_recorders.hpp; path = "../OpenXR-SDK/src/loader/loader_logger_recorders.hpp"; sourceTree = "<group>"; };
+		83906E942BB5D75E009FA03D /* loader_init_data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = loader_init_data.cpp; path = "../OpenXR-SDK/src/loader/loader_init_data.cpp"; sourceTree = "<group>"; };
+		83906E952BB5D75E009FA03D /* loader_logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = loader_logger.cpp; path = "../OpenXR-SDK/src/loader/loader_logger.cpp"; sourceTree = "<group>"; };
+		83906E962BB5D75E009FA03D /* loader_core.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = loader_core.cpp; path = "../OpenXR-SDK/src/loader/loader_core.cpp"; sourceTree = "<group>"; };
+		83906E972BB5D75E009FA03D /* loader_logger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = loader_logger.hpp; path = "../OpenXR-SDK/src/loader/loader_logger.hpp"; sourceTree = "<group>"; };
+		83906E982BB5D75E009FA03D /* loader_instance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = loader_instance.cpp; path = "../OpenXR-SDK/src/loader/loader_instance.cpp"; sourceTree = "<group>"; };
+		83906E992BB5D75E009FA03D /* loader_platform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = loader_platform.hpp; path = "../OpenXR-SDK/src/loader/loader_platform.hpp"; sourceTree = "<group>"; };
+		83906E9A2BB5D75E009FA03D /* loader_instance.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = loader_instance.hpp; path = "../OpenXR-SDK/src/loader/loader_instance.hpp"; sourceTree = "<group>"; };
+		83906E9B2BB5D75E009FA03D /* xr_generated_loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = xr_generated_loader.cpp; path = "../OpenXR-SDK/src/loader/xr_generated_loader.cpp"; sourceTree = "<group>"; };
+		83906E9C2BB5D75E009FA03D /* xr_generated_loader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = xr_generated_loader.hpp; path = "../OpenXR-SDK/src/loader/xr_generated_loader.hpp"; sourceTree = "<group>"; };
+		83906E9D2BB5D75E009FA03D /* runtime_interface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = runtime_interface.hpp; path = "../OpenXR-SDK/src/loader/runtime_interface.hpp"; sourceTree = "<group>"; };
+		83906E9E2BB5D75E009FA03D /* runtime_interface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = runtime_interface.cpp; path = "../OpenXR-SDK/src/loader/runtime_interface.cpp"; sourceTree = "<group>"; };
+		83906EB52BB5D840009FA03D /* xr_generated_dispatch_table_core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = xr_generated_dispatch_table_core.c; path = "../OpenXR-SDK/src/xr_generated_dispatch_table_core.c"; sourceTree = "<group>"; };
+		83906EB62BB5D840009FA03D /* xr_generated_dispatch_table_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xr_generated_dispatch_table_core.h; path = "../OpenXR-SDK/src/xr_generated_dispatch_table_core.h"; sourceTree = "<group>"; };
+		83906EBA2BB5D873009FA03D /* json_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_reader.cpp; sourceTree = "<group>"; };
+		83906EBB2BB5D873009FA03D /* json_tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json_tool.h; sourceTree = "<group>"; };
+		83906EBC2BB5D873009FA03D /* json_value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_value.cpp; sourceTree = "<group>"; };
+		83906EBD2BB5D873009FA03D /* json_valueiterator.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_valueiterator.inl; sourceTree = "<group>"; };
+		83906EBE2BB5D873009FA03D /* json_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_writer.cpp; sourceTree = "<group>"; };
+		8392FAA02BBE418400FDEAFF /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		8392FAA22BBE418C00FDEAFF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8392FAA42BBE419600FDEAFF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		83AEFD462C4DD90000844A25 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		83C9BEC12BB5D3C00055DBCE /* libopenxr_loader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libopenxr_loader.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		83EC637D2BC9C4BD00A6187E /* interaction_manager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = interaction_manager.mm; sourceTree = "<group>"; };
+		83EC639C2BCA58E700A6187E /* system_visionos.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = system_visionos.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		832F7AA52BB77AA500ACE6EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8392FAA32BBE418C00FDEAFF /* Cocoa.framework in Frameworks */,
+				8392FAA12BBE418400FDEAFF /* Metal.framework in Frameworks */,
+				8392FAA52BBE419600FDEAFF /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		838A48FE2BB1FA0400CEA1A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C9BEBF2BB5D3C00055DBCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		838A48F72BB1FA0400CEA1A8 = {
+			isa = PBXGroup;
+			children = (
+				838A49032BB1FA0400CEA1A8 /* OpenXRKit */,
+				83906E5E2BB5D587009FA03D /* openxr_loader */,
+				838A49022BB1FA0400CEA1A8 /* Products */,
+				83A831472BB2096F00DBFFB3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		838A49022BB1FA0400CEA1A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				838A49012BB1FA0400CEA1A8 /* OpenXRKit.framework */,
+				83C9BEC12BB5D3C00055DBCE /* libopenxr_loader.a */,
+				832F7AA72BB77AA500ACE6EE /* libopenxr_runtime.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		838A49032BB1FA0400CEA1A8 /* OpenXRKit */ = {
+			isa = PBXGroup;
+			children = (
+				838A49132BB1FAC700CEA1A8 /* Headers */,
+				838A490E2BB1FAC700CEA1A8 /* Source */,
+				838A49042BB1FA0400CEA1A8 /* OpenXRKit.h */,
+				83AEFD462C4DD90000844A25 /* PrivacyInfo.xcprivacy */,
+			);
+			path = OpenXRKit;
+			sourceTree = "<group>";
+		};
+		838A490E2BB1FAC700CEA1A8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				838A490B2BB1FAC700CEA1A8 /* openxr_api.cpp */,
+				8363D4FB2C446ADE00948FEC /* frame_queue.hpp */,
+				832F7B182BBBCAFC00ACE6EE /* runtime_api.cpp */,
+				838A490C2BB1FAC700CEA1A8 /* instance_apple.cpp */,
+				837B1D2B2BB6293B003D65EC /* system_ios.mm */,
+				83EC639C2BCA58E700A6187E /* system_visionos.mm */,
+				832F7B132BBA4EAA00ACE6EE /* session_ios.mm */,
+				8363D4F22C41EE8B00948FEC /* session_visionos.mm */,
+				83EC637D2BC9C4BD00A6187E /* interaction_manager.mm */,
+				830AD83D2BC45B34003F51D3 /* compositor.metal */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		838A49132BB1FAC700CEA1A8 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				838A490F2BB1FAC700CEA1A8 /* openxr_api.h */,
+				838A49122BB1FAC700CEA1A8 /* runtime_api.hpp */,
+				838A49112BB1FAC700CEA1A8 /* runtime_apple.hpp */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		83906E5E2BB5D587009FA03D /* openxr_loader */ = {
+			isa = PBXGroup;
+			children = (
+				83906E612BB5D6B8009FA03D /* include */,
+				83906E602BB5D6A9009FA03D /* src */,
+			);
+			name = openxr_loader;
+			sourceTree = "<group>";
+		};
+		83906E602BB5D6A9009FA03D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				83906EB22BB5D7E8009FA03D /* external */,
+				83906E632BB5D6CE009FA03D /* common */,
+				83906E622BB5D6C6009FA03D /* loader */,
+				83906EB62BB5D840009FA03D /* xr_generated_dispatch_table_core.h */,
+				83906EB52BB5D840009FA03D /* xr_generated_dispatch_table_core.c */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		83906E612BB5D6B8009FA03D /* include */ = {
+			isa = PBXGroup;
+			children = (
+				83906E6C2BB5D708009FA03D /* openxr */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		83906E622BB5D6C6009FA03D /* loader */ = {
+			isa = PBXGroup;
+			children = (
+				83906E8C2BB5D75E009FA03D /* api_layer_interface.cpp */,
+				83906E8E2BB5D75E009FA03D /* api_layer_interface.hpp */,
+				83906E8D2BB5D75E009FA03D /* exception_handling.hpp */,
+				83906E962BB5D75E009FA03D /* loader_core.cpp */,
+				83906E942BB5D75E009FA03D /* loader_init_data.cpp */,
+				83906E922BB5D75E009FA03D /* loader_init_data.hpp */,
+				83906E982BB5D75E009FA03D /* loader_instance.cpp */,
+				83906E9A2BB5D75E009FA03D /* loader_instance.hpp */,
+				83906E8F2BB5D75E009FA03D /* loader_logger_recorders.cpp */,
+				83906E932BB5D75E009FA03D /* loader_logger_recorders.hpp */,
+				83906E952BB5D75E009FA03D /* loader_logger.cpp */,
+				83906E972BB5D75E009FA03D /* loader_logger.hpp */,
+				83906E992BB5D75E009FA03D /* loader_platform.hpp */,
+				83906E912BB5D75E009FA03D /* manifest_file.cpp */,
+				83906E902BB5D75E009FA03D /* manifest_file.hpp */,
+				83906E9E2BB5D75E009FA03D /* runtime_interface.cpp */,
+				83906E9D2BB5D75E009FA03D /* runtime_interface.hpp */,
+				83906E9B2BB5D75E009FA03D /* xr_generated_loader.cpp */,
+				83906E9C2BB5D75E009FA03D /* xr_generated_loader.hpp */,
+			);
+			name = loader;
+			sourceTree = "<group>";
+		};
+		83906E632BB5D6CE009FA03D /* common */ = {
+			isa = PBXGroup;
+			children = (
+				83906E7B2BB5D72D009FA03D /* extra_algorithms.h */,
+				83906E742BB5D72D009FA03D /* filesystem_utils.cpp */,
+				83906E7F2BB5D72D009FA03D /* filesystem_utils.hpp */,
+				83906E772BB5D72D009FA03D /* hex_and_handles.h */,
+				83906E762BB5D72D009FA03D /* object_info.cpp */,
+				83906E782BB5D72D009FA03D /* object_info.h */,
+				83906E7A2BB5D72D009FA03D /* platform_utils.hpp */,
+				83906E7C2BB5D72D009FA03D /* stdfs_conditions.h */,
+				83906E7D2BB5D72D009FA03D /* unique_asset.h */,
+				83906E752BB5D72D009FA03D /* vulkan_debug_object_namer.hpp */,
+				83906E792BB5D72D009FA03D /* xr_dependencies.h */,
+				83906E7E2BB5D72D009FA03D /* xr_linear.h */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		83906E6C2BB5D708009FA03D /* openxr */ = {
+			isa = PBXGroup;
+			children = (
+				83906E652BB5D708009FA03D /* openxr_loader_negotiation.h */,
+				83906E662BB5D708009FA03D /* openxr_platform_defines.h */,
+				83906E672BB5D708009FA03D /* openxr_platform.h */,
+				83906E682BB5D708009FA03D /* openxr_reflection_parent_structs.h */,
+				83906E692BB5D708009FA03D /* openxr_reflection_structs.h */,
+				83906E6A2BB5D708009FA03D /* openxr_reflection.h */,
+				83906E6B2BB5D708009FA03D /* openxr.h */,
+			);
+			name = openxr;
+			path = "../OpenXR-SDK/include/openxr";
+			sourceTree = "<group>";
+		};
+		83906EB22BB5D7E8009FA03D /* external */ = {
+			isa = PBXGroup;
+			children = (
+				83906EB32BB5D7F1009FA03D /* jsoncpp */,
+			);
+			name = external;
+			sourceTree = "<group>";
+		};
+		83906EB32BB5D7F1009FA03D /* jsoncpp */ = {
+			isa = PBXGroup;
+			children = (
+				83906EB42BB5D7F8009FA03D /* src */,
+			);
+			name = jsoncpp;
+			sourceTree = "<group>";
+		};
+		83906EB42BB5D7F8009FA03D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				83906EBF2BB5D873009FA03D /* lib_json */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		83906EBF2BB5D873009FA03D /* lib_json */ = {
+			isa = PBXGroup;
+			children = (
+				83906EBA2BB5D873009FA03D /* json_reader.cpp */,
+				83906EBB2BB5D873009FA03D /* json_tool.h */,
+				83906EBC2BB5D873009FA03D /* json_value.cpp */,
+				83906EBD2BB5D873009FA03D /* json_valueiterator.inl */,
+				83906EBE2BB5D873009FA03D /* json_writer.cpp */,
+			);
+			name = lib_json;
+			path = "../OpenXR-SDK/src/external/jsoncpp/src/lib_json";
+			sourceTree = "<group>";
+		};
+		83A831472BB2096F00DBFFB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8392FAA42BBE419600FDEAFF /* QuartzCore.framework */,
+				8392FAA22BBE418C00FDEAFF /* Cocoa.framework */,
+				8392FAA02BBE418400FDEAFF /* Metal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		832F7AA32BB77AA500ACE6EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		838A48FC2BB1FA0400CEA1A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8363D4FD2C446ADE00948FEC /* frame_queue.hpp in Headers */,
+				838A49172BB1FAC700CEA1A8 /* openxr_api.h in Headers */,
+				838A491A2BB1FAC700CEA1A8 /* runtime_api.hpp in Headers */,
+				838A49192BB1FAC700CEA1A8 /* runtime_apple.hpp in Headers */,
+				838A49052BB1FA0400CEA1A8 /* OpenXRKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C9BEBD2BB5D3C00055DBCE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83906E6E2BB5D708009FA03D /* openxr_platform_defines.h in Headers */,
+				83906E6D2BB5D708009FA03D /* openxr_loader_negotiation.h in Headers */,
+				83906E702BB5D708009FA03D /* openxr_reflection_parent_structs.h in Headers */,
+				83906E722BB5D708009FA03D /* openxr_reflection.h in Headers */,
+				83906E712BB5D708009FA03D /* openxr_reflection_structs.h in Headers */,
+				83906E6F2BB5D708009FA03D /* openxr_platform.h in Headers */,
+				83906E732BB5D708009FA03D /* openxr.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		832F7AA62BB77AA500ACE6EE /* openxr_runtime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 832F7AA82BB77AA500ACE6EE /* Build configuration list for PBXNativeTarget "openxr_runtime" */;
+			buildPhases = (
+				832F7AA32BB77AA500ACE6EE /* Headers */,
+				832F7AA42BB77AA500ACE6EE /* Sources */,
+				832F7AA52BB77AA500ACE6EE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = openxr_runtime;
+			productName = openxr_runtime;
+			productReference = 832F7AA72BB77AA500ACE6EE /* libopenxr_runtime.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		838A49002BB1FA0400CEA1A8 /* OpenXRKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 838A49082BB1FA0400CEA1A8 /* Build configuration list for PBXNativeTarget "OpenXRKit" */;
+			buildPhases = (
+				838A48FC2BB1FA0400CEA1A8 /* Headers */,
+				838A48FD2BB1FA0400CEA1A8 /* Sources */,
+				838A48FE2BB1FA0400CEA1A8 /* Frameworks */,
+				838A48FF2BB1FA0400CEA1A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenXRKit;
+			productName = OpenXRMetal;
+			productReference = 838A49012BB1FA0400CEA1A8 /* OpenXRKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		83C9BEC02BB5D3C00055DBCE /* openxr_loader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83C9BEC42BB5D3C00055DBCE /* Build configuration list for PBXNativeTarget "openxr_loader" */;
+			buildPhases = (
+				83C9BEBD2BB5D3C00055DBCE /* Headers */,
+				83C9BEBE2BB5D3C00055DBCE /* Sources */,
+				83C9BEBF2BB5D3C00055DBCE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = openxr_loader;
+			productName = openxr_loader;
+			productReference = 83C9BEC12BB5D3C00055DBCE /* libopenxr_loader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		838A48F82BB1FA0400CEA1A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					832F7AA62BB77AA500ACE6EE = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					838A49002BB1FA0400CEA1A8 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					83C9BEC02BB5D3C00055DBCE = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 838A48FB2BB1FA0400CEA1A8 /* Build configuration list for PBXProject "OpenXRKit" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 838A48F72BB1FA0400CEA1A8;
+			productRefGroup = 838A49022BB1FA0400CEA1A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				838A49002BB1FA0400CEA1A8 /* OpenXRKit */,
+				83C9BEC02BB5D3C00055DBCE /* openxr_loader */,
+				832F7AA62BB77AA500ACE6EE /* openxr_runtime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		838A48FF2BB1FA0400CEA1A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83AEFD472C4DD90000844A25 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		832F7AA42BB77AA500ACE6EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				832F7B172BBA4EB800ACE6EE /* session_ios.mm in Sources */,
+				832F7AAB2BB77AB800ACE6EE /* openxr_api.cpp in Sources */,
+				832F7AAC2BB77ABA00ACE6EE /* instance_apple.cpp in Sources */,
+				832F7AAD2BB77ABB00ACE6EE /* system_ios.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		838A48FD2BB1FA0400CEA1A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830AD83E2BC45B34003F51D3 /* compositor.metal in Sources */,
+				832F7B192BBBCAFC00ACE6EE /* runtime_api.cpp in Sources */,
+				83EC639D2BCA58E700A6187E /* system_visionos.mm in Sources */,
+				838A49142BB1FAC700CEA1A8 /* openxr_api.cpp in Sources */,
+				838A49152BB1FAC700CEA1A8 /* instance_apple.cpp in Sources */,
+				832F7B162BBA4EAA00ACE6EE /* session_ios.mm in Sources */,
+				837B1D2C2BB6293B003D65EC /* system_ios.mm in Sources */,
+				83EC63802BC9C4BD00A6187E /* interaction_manager.mm in Sources */,
+				8363D4F32C41EE8B00948FEC /* session_visionos.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C9BEBE2BB5D3C00055DBCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83906EC02BB5D873009FA03D /* json_reader.cpp in Sources */,
+				83906EAB2BB5D75E009FA03D /* loader_instance.cpp in Sources */,
+				83906EB72BB5D840009FA03D /* xr_generated_dispatch_table_core.c in Sources */,
+				83906EC22BB5D873009FA03D /* json_value.cpp in Sources */,
+				83906EC32BB5D873009FA03D /* json_writer.cpp in Sources */,
+				83906E822BB5D72D009FA03D /* object_info.cpp in Sources */,
+				83906E9F2BB5D75E009FA03D /* api_layer_interface.cpp in Sources */,
+				83906EA72BB5D75E009FA03D /* loader_init_data.cpp in Sources */,
+				83906EA42BB5D75E009FA03D /* manifest_file.cpp in Sources */,
+				83906EB12BB5D75E009FA03D /* runtime_interface.cpp in Sources */,
+				83906EA22BB5D75E009FA03D /* loader_logger_recorders.cpp in Sources */,
+				83906EAE2BB5D75E009FA03D /* xr_generated_loader.cpp in Sources */,
+				83906E802BB5D72D009FA03D /* filesystem_utils.cpp in Sources */,
+				83906EA82BB5D75E009FA03D /* loader_logger.cpp in Sources */,
+				83906EA92BB5D75E009FA03D /* loader_core.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		832F7AA92BB77AA500ACE6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		832F7AAA2BB77AA500ACE6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		838A49062BB1FA0400CEA1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = c17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+					"XR_OS_APPLE=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../OpenXR-SDK/include";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = auto;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		838A49072BB1FA0400CEA1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = c17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "XR_OS_APPLE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../OpenXR-SDK/include";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = auto;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		838A49092BB1FA0400CEA1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_STRICT_ALIASING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "©2024, Warren Moore. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = co.fourspace.OpenXRKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		838A490A2BB1FA0400CEA1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_STRICT_ALIASING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "©2024, Warren Moore. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = co.fourspace.OpenXRKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		83C9BEC22BB5D3C00055DBCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../OpenXR-SDK/src/common",
+					"$(SRCROOT)/../OpenXR-SDK/src/loader",
+					"$(SRCROOT)/../OpenXR-SDK/src/external/jsoncpp/include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/openxr;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx xrsimulator xros iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		83C9BEC32BB5D3C00055DBCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = RHRJ88BAB5;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../OpenXR-SDK/src/common",
+					"$(SRCROOT)/../OpenXR-SDK/src/loader",
+					"$(SRCROOT)/../OpenXR-SDK/src/external/jsoncpp/include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/openxr;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx xrsimulator xros iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		832F7AA82BB77AA500ACE6EE /* Build configuration list for PBXNativeTarget "openxr_runtime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832F7AA92BB77AA500ACE6EE /* Debug */,
+				832F7AAA2BB77AA500ACE6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		838A48FB2BB1FA0400CEA1A8 /* Build configuration list for PBXProject "OpenXRKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				838A49062BB1FA0400CEA1A8 /* Debug */,
+				838A49072BB1FA0400CEA1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		838A49082BB1FA0400CEA1A8 /* Build configuration list for PBXNativeTarget "OpenXRKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				838A49092BB1FA0400CEA1A8 /* Debug */,
+				838A490A2BB1FA0400CEA1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83C9BEC42BB5D3C00055DBCE /* Build configuration list for PBXNativeTarget "openxr_loader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83C9BEC22BB5D3C00055DBCE /* Debug */,
+				83C9BEC32BB5D3C00055DBCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 838A48F82BB1FA0400CEA1A8 /* Project object */;
+}
